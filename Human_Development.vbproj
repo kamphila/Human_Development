@@ -1,0 +1,1047 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9DD2A887-F74D-4753-BAB7-F7EF3310137D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Human_Development.My.MyApplication</StartupObject>
+    <RootNamespace>Human_Development</RootNamespace>
+    <AssemblyName>Human_Development</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Human_Development.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Human_Development.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FormActionClass">
+      <HintPath>..\FormClassLibrary\bin\Debug\FormActionClass.dll</HintPath>
+    </Reference>
+    <Reference Include="LionDBConnector">
+      <HintPath>..\reference\LionDBConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="LionEncript">
+      <HintPath>..\reference\LionEncript.dll</HintPath>
+    </Reference>
+    <Reference Include="messageboxsystem, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\reference\messageboxsystem.dll</HintPath>
+    </Reference>
+    <Reference Include="MTGCCombobox, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\reference\MTGCCombobox.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\reference\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="SecurityClass, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\reference\SecurityClass.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Annual Development Plan\ADD_Edit_Annual_Position.Designer.vb">
+      <DependentUpon>ADD_Edit_Annual_Position.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Annual Development Plan\ADD_Edit_Annual_Position.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Annual Development Plan\ADD_Edit_Annual_Position_Browse.Designer.vb">
+      <DependentUpon>ADD_Edit_Annual_Position_Browse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Annual Development Plan\ADD_Edit_Annual_Position_Browse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Annual Development Plan\Select_Course.Designer.vb">
+      <DependentUpon>Select_Course.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Annual Development Plan\Select_Course.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Annual Development Plan\Select_Place.Designer.vb">
+      <DependentUpon>Select_Place.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Annual Development Plan\Select_Place.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Annual Development Plan\Select_Roadmap.Designer.vb">
+      <DependentUpon>Select_Roadmap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Annual Development Plan\Select_Roadmap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Annual Development Plan\Staff\select _person.Designer.vb">
+      <DependentUpon>select _person.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Annual Development Plan\Staff\select _person.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Annual Development Plan\Staff\SelectPosition.designer.vb">
+      <DependentUpon>SelectPosition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Annual Development Plan\Staff\SelectPosition.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Annual Development Plan\Staff\select_data.vb" />
+    <Compile Include="Annual Development Plan\Staff\select_position_level.Designer.vb">
+      <DependentUpon>select_position_level.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Annual Development Plan\Staff\select_position_level.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Annual Development Plan\Staff\select_position_STD.Designer.vb">
+      <DependentUpon>select_position_STD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Annual Development Plan\Staff\select_position_STD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Annual Development Plan\Staff\staff_searching.Designer.vb">
+      <DependentUpon>staff_searching.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Annual Development Plan\Staff\staff_searching.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Budget\Select_Annual_Master.Designer.vb">
+      <DependentUpon>Select_Annual_Master.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Budget\Select_Annual_Master.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Budget\Select_Course_Master.Designer.vb">
+      <DependentUpon>Select_Course_Master.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Budget\Select_Course_Master.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\Record_Development\Record_Development_Detail.vb" />
+    <Compile Include="Class\Record_Development\Record_Development_Master.vb" />
+    <Compile Include="Class\Register\Cls_Register_Detail.vb" />
+    <Compile Include="Mainpage.Designer.vb">
+      <DependentUpon>Mainpage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mainpage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register\Register_DEV.Designer.vb">
+      <DependentUpon>Register_DEV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Register\Register_DEV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register\Register_DEV_Browser.Designer.vb">
+      <DependentUpon>Register_DEV_Browser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Register\Register_DEV_Browser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Budget\Select_Annual.Designer.vb">
+      <DependentUpon>Select_Annual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Budget\Select_Annual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\Annual Development Plan\Cls_Annual_Budget.vb" />
+    <Compile Include="Class\Annual Development Plan\Cls_Annual_Detail.vb" />
+    <Compile Include="Class\Annual Development Plan\Cls_Annual_Master.vb" />
+    <Compile Include="Annual Development Plan\Staff\ClsSelect.vb" />
+    <Compile Include="Class\Budget\Cls_Budget_Detail.vb" />
+    <Compile Include="Class\Cls_Base.vb" />
+    <Compile Include="Annual Development Plan\Staff\ClsStation.vb" />
+    <Compile Include="Class\Course\Cls_Course_Master.vb" />
+    <Compile Include="Class\Course\Cls_HD_Course_Exam.vb" />
+    <Compile Include="Class\Course\Cls_HD_Course_Struct.vb" />
+    <Compile Include="Class\Budget\Cls_Budget_Master.vb" />
+    <Compile Include="Class\Development Roadmap\Cls_HD_Roadmap_Master.vb" />
+    <Compile Include="Class\Development Roadmap\Cls_HD_Roadmap_Detail.vb" />
+    <Compile Include="Class\Function\cls_log.vb" />
+    <Compile Include="Class\Setup HD\Cls_Competency.vb" />
+    <Compile Include="Class\Setup HD\Cls_HD_Course.vb" />
+    <Compile Include="Class\Setup HD\Cls_HD_Course_Item.vb" />
+    <Compile Include="Class\Setup HD\Cls_HD_Exam.vb" />
+    <Compile Include="Class\Cls_SqlDB.vb" />
+    <Compile Include="Class\Setup HD\Cls_HD_Course_Type.vb" />
+    <Compile Include="Class\Setup HD\Cls_HD_Course_Content.vb" />
+    <Compile Include="Class\Setup HD\Cls_HD_Exam_Master.vb" />
+    <Compile Include="Class\Setup HD\Cls_HD_Guest.vb" />
+    <Compile Include="Class\Setup HD\Cls_HD_Place.vb" />
+    <Compile Include="Class\Setup HD\Cls_HD_Tool.vb" />
+    <Compile Include="Class\Setup HD\Cls_HD_Method.vb" />
+    <Compile Include="Class\Setup HD\Cls_HD_Score.vb" />
+    <Compile Include="Class\Setup HD\Cls_HD_Assessment_Level.vb" />
+    <Compile Include="Class\Setup HD\Cls_HD_Course_Kpis.vb" />
+    <Compile Include="Class\Setup HD\Cls_HD_Criteria_Kpis.vb" />
+    <Compile Include="Class\Setup HD\Cls_HD_Cost.vb" />
+    <Compile Include="Class\Setup HD\Cls_HD_Budget.vb" />
+    <Compile Include="Class\Setup HD\cls_person.vb" />
+    <Compile Include="Class\Setup HD\Cls_Station.vb" />
+    <Compile Include="Class\Setup HD\Cls_Position.vb" />
+    <Compile Include="Class\SQLServerconnection.vb" />
+    <Compile Include="Annual Development Plan\Staff\Utility.vb" />
+    <Compile Include="Course\ADD_Edit_Course.Designer.vb">
+      <DependentUpon>ADD_Edit_Course.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Course\ADD_Edit_Course.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Course\ADD_Edit_List_Course.Designer.vb">
+      <DependentUpon>ADD_Edit_List_Course.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Course\ADD_Edit_List_Course.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Budget\BG1_Browse_Input_Budget.Designer.vb">
+      <DependentUpon>BG1_Browse_Input_Budget.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Budget\BG1_Browse_Input_Budget.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Budget\BG2_Input_Budget.Designer.vb">
+      <DependentUpon>BG2_Input_Budget.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Budget\BG2_Input_Budget.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Budget\Browse_Record_Development.Designer.vb">
+      <DependentUpon>Browse_Record_Development.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Budget\Browse_Record_Development.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Course\Course_Content_POP.Designer.vb">
+      <DependentUpon>Course_Content_POP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Course\Course_Content_POP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Budget\Record_Development.Designer.vb">
+      <DependentUpon>Record_Development.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Budget\Record_Development.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Course\Select_Competency.Designer.vb">
+      <DependentUpon>Select_Competency.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Course\Select_Competency.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Development Roadmap\Add_Edit_Development_Roadmap.Designer.vb">
+      <DependentUpon>Add_Edit_Development_Roadmap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Development Roadmap\Add_Edit_Development_Roadmap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Development Roadmap\Add_Edit_Roadmap_Browse.Designer.vb">
+      <DependentUpon>Add_Edit_Roadmap_Browse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Development Roadmap\Add_Edit_Roadmap_Browse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Development Roadmap\Select_Course_Outline.Designer.vb">
+      <DependentUpon>Select_Course_Outline.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Development Roadmap\Select_Course_Outline.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Development Roadmap\Select_Position.Designer.vb">
+      <DependentUpon>Select_Position.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Development Roadmap\Select_Position.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Development Roadmap\Show_of_ Development_Competency.Designer.vb">
+      <DependentUpon>Show_of_ Development_Competency.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Development Roadmap\Show_of_ Development_Competency.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Development Roadmap\Show_of_Development_Roadmap.Designer.vb">
+      <DependentUpon>Show_of_Development_Roadmap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Development Roadmap\Show_of_Development_Roadmap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HD_Config.vb" />
+    <Compile Include="Class\Register\Cls_Register_Master.vb" />
+    <Compile Include="Report\Dataset\Ds_Rpt_HD_001.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Rpt_HD_001.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Frm\frm_Opt_HD_Rpt001.Designer.vb">
+      <DependentUpon>frm_Opt_HD_Rpt001.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Frm\frm_Opt_HD_Rpt001.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Rpt\Rpt_Hd_001.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_Hd_001.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rpt_HD_IN_list.Designer.vb">
+      <DependentUpon>rpt_HD_IN_list.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rpt_HD_IN_list.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\rpt_view.Designer.vb">
+      <DependentUpon>rpt_view.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rpt_view.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup HD\CachedPer_historyleave.vb" />
+    <Compile Include="Setup HD\Select_Station.Designer.vb">
+      <DependentUpon>Select_Station.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup HD\Select_Station.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Course_Content_POP.Designer.vb">
+      <DependentUpon>Setup_Course_Content_POP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Course_Content_POP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup HD\HD_System_Setup.Designer.vb">
+      <DependentUpon>HD_System_Setup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup HD\HD_System_Setup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Course_Item_POP.Designer.vb">
+      <DependentUpon>Setup_Course_Item_POP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Course_Item_POP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Exam_Master_POP.Designer.vb">
+      <DependentUpon>Setup_Exam_Master_POP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Exam_Master_POP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Exam_POP.Designer.vb">
+      <DependentUpon>Setup_Exam_POP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Exam_POP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Guest_POP.Designer.vb">
+      <DependentUpon>Setup_Guest_POP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Guest_POP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Method_POP.Designer.vb">
+      <DependentUpon>Setup_Method_POP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Method_POP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Place_POP.Designer.vb">
+      <DependentUpon>Setup_Place_POP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Place_POP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Score_POP.Designer.vb">
+      <DependentUpon>Setup_Score_POP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Score_POP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Criteria_KPIs_POP.Designer.vb">
+      <DependentUpon>Setup_Criteria_KPIs_POP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Criteria_KPIs_POP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Budget_POP.Designer.vb">
+      <DependentUpon>Setup_Budget_POP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Budget_POP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Cost_POP.Designer.vb">
+      <DependentUpon>Setup_Cost_POP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Cost_POP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Course_Type_POP.Designer.vb">
+      <DependentUpon>Setup_Course_Type_POP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Course_Type_POP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Course_KPIs_POP.Designer.vb">
+      <DependentUpon>Setup_Course_KPIs_POP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Course_KPIs_POP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Tools_POP.Designer.vb">
+      <DependentUpon>Setup_Tools_POP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Tools_POP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Assessment_Level_POP.Designer.vb">
+      <DependentUpon>Setup_Assessment_Level_POP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Assessment_Level_POP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Course_POP.Designer.vb">
+      <DependentUpon>Setup_Course_POP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setup HD\Setup_Course_POP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Util\cls_myfunc.vb" />
+    <Compile Include="Util\cls_sc_permission_corp.vb" />
+    <Compile Include="Util\Frm_Select.Designer.vb">
+      <DependentUpon>Frm_Select.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Util\Frm_Select.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Util\frm_select_branch_1.Designer.vb">
+      <DependentUpon>frm_select_branch_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Util\frm_select_branch_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Util\frm_select_branch_2.Designer.vb">
+      <DependentUpon>frm_select_branch_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Util\frm_select_branch_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Util\HD_POP_Person.designer.vb">
+      <DependentUpon>HD_POP_Person.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Util\HD_POP_Person.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Util\MyCheckBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Util\MyListView.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Util\MyListView_SelectedIndexChanged.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Annual Development Plan\ADD_Edit_Annual_Position.resx">
+      <DependentUpon>ADD_Edit_Annual_Position.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Annual Development Plan\ADD_Edit_Annual_Position_Browse.resx">
+      <DependentUpon>ADD_Edit_Annual_Position_Browse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Annual Development Plan\Select_Course.resx">
+      <DependentUpon>Select_Course.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Annual Development Plan\Select_Place.resx">
+      <DependentUpon>Select_Place.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Annual Development Plan\Select_Roadmap.resx">
+      <DependentUpon>Select_Roadmap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Annual Development Plan\Staff\select _person.resx">
+      <DependentUpon>select _person.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Annual Development Plan\Staff\SelectPosition.resx">
+      <DependentUpon>SelectPosition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Annual Development Plan\Staff\select_position_level.resx">
+      <DependentUpon>select_position_level.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Annual Development Plan\Staff\select_position_STD.resx">
+      <DependentUpon>select_position_STD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Annual Development Plan\Staff\staff_searching.resx">
+      <DependentUpon>staff_searching.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Budget\Select_Annual_Master.resx">
+      <DependentUpon>Select_Annual_Master.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Budget\Select_Course_Master.resx">
+      <DependentUpon>Select_Course_Master.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainpage.resx">
+      <DependentUpon>Mainpage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register\Register_DEV.resx">
+      <DependentUpon>Register_DEV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register\Register_DEV_Browser.resx">
+      <DependentUpon>Register_DEV_Browser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Budget\Select_Annual.resx">
+      <DependentUpon>Select_Annual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Course\ADD_Edit_Course.resx">
+      <DependentUpon>ADD_Edit_Course.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Course\ADD_Edit_List_Course.resx">
+      <DependentUpon>ADD_Edit_List_Course.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Budget\BG1_Browse_Input_Budget.resx">
+      <DependentUpon>BG1_Browse_Input_Budget.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Budget\BG2_Input_Budget.resx">
+      <DependentUpon>BG2_Input_Budget.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Budget\Browse_Record_Development.resx">
+      <DependentUpon>Browse_Record_Development.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Course\Course_Content_POP.resx">
+      <DependentUpon>Course_Content_POP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Budget\Record_Development.resx">
+      <DependentUpon>Record_Development.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Course\Select_Competency.resx">
+      <DependentUpon>Select_Competency.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Development Roadmap\Add_Edit_Development_Roadmap.resx">
+      <DependentUpon>Add_Edit_Development_Roadmap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Development Roadmap\Add_Edit_Roadmap_Browse.resx">
+      <DependentUpon>Add_Edit_Roadmap_Browse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Development Roadmap\Select_Course_Outline.resx">
+      <DependentUpon>Select_Course_Outline.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Development Roadmap\Select_Position.resx">
+      <DependentUpon>Select_Position.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Development Roadmap\Show_of_ Development_Competency.resx">
+      <DependentUpon>Show_of_ Development_Competency.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Development Roadmap\Show_of_Development_Roadmap.resx">
+      <DependentUpon>Show_of_Development_Roadmap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Frm\frm_Opt_HD_Rpt001.resx">
+      <DependentUpon>frm_Opt_HD_Rpt001.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Rpt\Rpt_Hd_001.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_Hd_001.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rpt_HD_IN_list.resx">
+      <DependentUpon>rpt_HD_IN_list.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rpt_view.resx">
+      <DependentUpon>rpt_view.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup HD\Select_Station.resx">
+      <DependentUpon>Select_Station.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup HD\Setup_Course_Content_POP.resx">
+      <DependentUpon>Setup_Course_Content_POP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup HD\HD_System_Setup.resx">
+      <DependentUpon>HD_System_Setup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup HD\Setup_Course_Item_POP.resx">
+      <DependentUpon>Setup_Course_Item_POP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup HD\Setup_Exam_Master_POP.resx">
+      <DependentUpon>Setup_Exam_Master_POP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup HD\Setup_Guest_POP.resx">
+      <DependentUpon>Setup_Guest_POP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup HD\Setup_Method_POP.resx">
+      <DependentUpon>Setup_Method_POP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup HD\Setup_Place_POP.resx">
+      <DependentUpon>Setup_Place_POP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup HD\Setup_Score_POP.resx">
+      <DependentUpon>Setup_Score_POP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup HD\Setup_Criteria_KPIs_POP.resx">
+      <DependentUpon>Setup_Criteria_KPIs_POP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup HD\Setup_Budget_POP.resx">
+      <DependentUpon>Setup_Budget_POP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup HD\Setup_Exam_POP.resx">
+      <DependentUpon>Setup_Exam_POP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup HD\Setup_Cost_POP.resx">
+      <DependentUpon>Setup_Cost_POP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup HD\Setup_Course_Type_POP.resx">
+      <DependentUpon>Setup_Course_Type_POP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup HD\Setup_Course_KPIs_POP.resx">
+      <DependentUpon>Setup_Course_KPIs_POP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup HD\Setup_Tools_POP.resx">
+      <DependentUpon>Setup_Tools_POP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup HD\Setup_Assessment_Level_POP.resx">
+      <DependentUpon>Setup_Assessment_Level_POP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setup HD\Setup_Course_POP.resx">
+      <DependentUpon>Setup_Course_POP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Util\Frm_Select.resx">
+      <DependentUpon>Frm_Select.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Util\frm_select_branch_1.resx">
+      <DependentUpon>frm_select_branch_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Util\frm_select_branch_2.resx">
+      <DependentUpon>frm_select_branch_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Util\HD_POP_Person.resx">
+      <DependentUpon>HD_POP_Person.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Util\MyListView.resx">
+      <DependentUpon>MyListView.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\add_edit_annualDB.datasource" />
+    <None Include="My Project\DataSources\Add_edit_Annual_Development_Course.datasource" />
+    <None Include="My Project\DataSources\Add_Edit_Annual_Training_budget.datasource" />
+    <None Include="My Project\DataSources\ADD_Edit_Course.datasource" />
+    <None Include="My Project\DataSources\Add_Edit_Course_Detail.datasource" />
+    <None Include="My Project\DataSources\add_edit_course_outline.datasource" />
+    <None Include="My Project\DataSources\Add_Edit_Development_Roadmap.datasource" />
+    <None Include="My Project\DataSources\ADD_Edit_List_Course.datasource" />
+    <None Include="My Project\DataSources\Add_Edit_Program_per_skill.datasource" />
+    <None Include="My Project\DataSources\add_edit_trainingneedsurvey_courselist.datasource" />
+    <None Include="My Project\DataSources\add_need_survey.datasource" />
+    <None Include="My Project\DataSources\Cls_Base.datasource" />
+    <None Include="My Project\DataSources\Cls_Course_Master.datasource" />
+    <None Include="My Project\DataSources\Cls_Course_Master1.datasource" />
+    <None Include="My Project\DataSources\Cls_HD_Assessment_Level.datasource" />
+    <None Include="My Project\DataSources\Cls_HD_Budget.datasource" />
+    <None Include="My Project\DataSources\Cls_HD_Cost.datasource" />
+    <None Include="My Project\DataSources\Cls_HD_Course.datasource" />
+    <None Include="My Project\DataSources\Cls_HD_Course1.datasource" />
+    <None Include="My Project\DataSources\Cls_HD_Course_Content.datasource" />
+    <None Include="My Project\DataSources\Cls_HD_Course_Exam.datasource" />
+    <None Include="My Project\DataSources\Cls_HD_Course_Item.datasource" />
+    <None Include="My Project\DataSources\Cls_HD_Course_Kpis.datasource" />
+    <None Include="My Project\DataSources\Cls_HD_Course_Struct.datasource" />
+    <None Include="My Project\DataSources\Cls_HD_Course_Type.datasource" />
+    <None Include="My Project\DataSources\Cls_HD_Criteria_Kpis.datasource" />
+    <None Include="My Project\DataSources\Cls_HD_Exam.datasource" />
+    <None Include="My Project\DataSources\Cls_HD_Exam_Master.datasource" />
+    <None Include="My Project\DataSources\Cls_HD_Guest.datasource" />
+    <None Include="My Project\DataSources\Cls_HD_Method.datasource" />
+    <None Include="My Project\DataSources\Cls_HD_Place.datasource" />
+    <None Include="My Project\DataSources\Cls_HD_Score.datasource" />
+    <None Include="My Project\DataSources\Cls_HD_Tool.datasource" />
+    <None Include="My Project\DataSources\Cls_SqlDB.datasource" />
+    <None Include="My Project\DataSources\Cls_SqlDB.KeyValuePrefixType.datasource" />
+    <None Include="My Project\DataSources\Course_Content_POP.datasource" />
+    <None Include="My Project\DataSources\Course_Status.datasource" />
+    <None Include="My Project\DataSources\Create_Course_Outline.datasource" />
+    <None Include="My Project\DataSources\Development_calendar_show.datasource" />
+    <None Include="My Project\DataSources\Form1.datasource" />
+    <None Include="My Project\DataSources\Form2.datasource" />
+    <None Include="My Project\DataSources\Frm_Select.datasource" />
+    <None Include="My Project\DataSources\HD_System_Setup.datasource" />
+    <None Include="My Project\DataSources\Head.datasource" />
+    <None Include="My Project\DataSources\Human_Development.My.MyApplication.datasource" />
+    <None Include="My Project\DataSources\Human_Development.My.MySettings.datasource" />
+    <None Include="My Project\DataSources\IDP.datasource" />
+    <None Include="My Project\DataSources\Individual_training_report.datasource" />
+    <None Include="My Project\DataSources\Input_Development_Real_Budget.datasource" />
+    <None Include="My Project\DataSources\Input_Development_record.datasource" />
+    <None Include="My Project\DataSources\Input_Performance_Evaluation_aftertrain.datasource" />
+    <None Include="My Project\DataSources\Item.datasource" />
+    <None Include="My Project\DataSources\list_ned_survey_result.datasource" />
+    <None Include="My Project\DataSources\List_of_Development_course.datasource" />
+    <None Include="My Project\DataSources\List_of_Development_Roadmap.datasource" />
+    <None Include="My Project\DataSources\Mainpage.datasource" />
+    <None Include="My Project\DataSources\MyCheckBox.datasource" />
+    <None Include="My Project\DataSources\MyListView.datasource" />
+    <None Include="My Project\DataSources\MyListView_SelectedIndexChanged.datasource" />
+    <None Include="My Project\DataSources\select_course_byneedsurvey.datasource" />
+    <None Include="My Project\DataSources\select_course_byPA.datasource" />
+    <None Include="My Project\DataSources\Setup_Annual_Development_Course.datasource" />
+    <None Include="My Project\DataSources\Setup_Assessment_Level_POP.datasource" />
+    <None Include="My Project\DataSources\Setup_Budget_POP.datasource" />
+    <None Include="My Project\DataSources\Setup_competency_program.datasource" />
+    <None Include="My Project\DataSources\Setup_Cost_POP.datasource" />
+    <None Include="My Project\DataSources\Setup_Course_Content_POP.datasource" />
+    <None Include="My Project\DataSources\Setup_Course_Item_POP.datasource" />
+    <None Include="My Project\DataSources\Setup_Course_KPIs_POP.datasource" />
+    <None Include="My Project\DataSources\Setup_Course_POP.datasource" />
+    <None Include="My Project\DataSources\Setup_Course_Type_POP.datasource" />
+    <None Include="My Project\DataSources\Setup_Criteria_KPIs_POP.datasource" />
+    <None Include="My Project\DataSources\Setup_Exam_Master_POP.datasource" />
+    <None Include="My Project\DataSources\Setup_Exam_POP.datasource" />
+    <None Include="My Project\DataSources\Setup_Guest_POP.datasource" />
+    <None Include="My Project\DataSources\Setup_Method_POP.datasource" />
+    <None Include="My Project\DataSources\Setup_Place_POP.datasource" />
+    <None Include="My Project\DataSources\Setup_Score_POP.datasource" />
+    <None Include="My Project\DataSources\Setup_Tools_POP.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Report\Dataset\Ds_Rpt_HD_001.xsc">
+      <DependentUpon>Ds_Rpt_HD_001.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Dataset\Ds_Rpt_HD_001.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Rpt_HD_001.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Report\Dataset\Ds_Rpt_HD_001.xss">
+      <DependentUpon>Ds_Rpt_HD_001.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\humanoDB.ini" />
+    <None Include="Resources\Program_Icon.rar" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.20.png" />
+    <None Include="Resources\1.26.png" />
+    <None Include="Resources\10.20.png" />
+    <None Include="Resources\10.26.png" />
+    <None Include="Resources\11.20.png" />
+    <None Include="Resources\11.26.png" />
+    <None Include="Resources\12.20.png" />
+    <None Include="Resources\12.26.png" />
+    <None Include="Resources\13.20.png" />
+    <None Include="Resources\13.26.png" />
+    <None Include="Resources\14.20.png" />
+    <None Include="Resources\14.26.png" />
+    <None Include="Resources\15.20.png" />
+    <None Include="Resources\15.26.png" />
+    <None Include="Resources\16.20.png" />
+    <None Include="Resources\16.26.png" />
+    <None Include="Resources\17.20.png" />
+    <None Include="Resources\17.26.png" />
+    <None Include="Resources\18.20.png" />
+    <None Include="Resources\18.26.png" />
+    <None Include="Resources\19.20.png" />
+    <None Include="Resources\2.20.png" />
+    <None Include="Resources\2.26.png" />
+    <None Include="Resources\19.26.png" />
+    <None Include="Resources\20.20.png" />
+    <None Include="Resources\20.26.png" />
+    <None Include="Resources\21.20.png" />
+    <None Include="Resources\21.26.png" />
+    <None Include="Resources\22.20.png" />
+    <None Include="Resources\22.26.png" />
+    <None Include="Resources\23.20.png" />
+    <None Include="Resources\23.26.png" />
+    <None Include="Resources\24.20.png" />
+    <None Include="Resources\24.26.png" />
+    <None Include="Resources\25.20.png" />
+    <None Include="Resources\25.26.png" />
+    <None Include="Resources\26.20.png" />
+    <None Include="Resources\26.26.png" />
+    <None Include="Resources\27.20.png" />
+    <None Include="Resources\27.26.png" />
+    <None Include="Resources\28.20.png" />
+    <None Include="Resources\28.26.png" />
+    <None Include="Resources\29.20.png" />
+    <None Include="Resources\3.20.png" />
+    <None Include="Resources\3.26.png" />
+    <None Include="Resources\29.26.png" />
+    <None Include="Resources\30.20.png" />
+    <None Include="Resources\30.26.png" />
+    <None Include="Resources\31.20.png" />
+    <None Include="Resources\31.26.png" />
+    <None Include="Resources\32.20.png" />
+    <None Include="Resources\32.26.png" />
+    <None Include="Resources\33.20.png" />
+    <None Include="Resources\33.26.png" />
+    <None Include="Resources\34.20.png" />
+    <None Include="Resources\34.26.png" />
+    <None Include="Resources\35.20.png" />
+    <None Include="Resources\35.26.png" />
+    <None Include="Resources\36.20.png" />
+    <None Include="Resources\36.26.png" />
+    <None Include="Resources\37.20.png" />
+    <None Include="Resources\37.26.png" />
+    <None Include="Resources\38.20.png" />
+    <None Include="Resources\38.26.png" />
+    <None Include="Resources\39.20.png" />
+    <None Include="Resources\4.20.png" />
+    <None Include="Resources\4.26.png" />
+    <None Include="Resources\39.26.png" />
+    <None Include="Resources\40.20.png" />
+    <None Include="Resources\40.26.png" />
+    <None Include="Resources\41.20.png" />
+    <None Include="Resources\41.26.png" />
+    <None Include="Resources\42.20.png" />
+    <None Include="Resources\42.26.png" />
+    <None Include="Resources\43.20.png" />
+    <None Include="Resources\43.26.png" />
+    <None Include="Resources\44.20.png" />
+    <None Include="Resources\44.26.png" />
+    <None Include="Resources\45.20.png" />
+    <None Include="Resources\45.26.png" />
+    <None Include="Resources\46.20.png" />
+    <None Include="Resources\46.26.png" />
+    <None Include="Resources\47.20.png" />
+    <None Include="Resources\47.26.png" />
+    <None Include="Resources\48.20.png" />
+    <None Include="Resources\48.26.png" />
+    <None Include="Resources\5.20.png" />
+    <None Include="Resources\5.26.png" />
+    <None Include="Resources\49.20.png" />
+    <None Include="Resources\50.20.png" />
+    <None Include="Resources\50.26.png" />
+    <None Include="Resources\51.20.png" />
+    <None Include="Resources\51.26.png" />
+    <None Include="Resources\52.20.png" />
+    <None Include="Resources\52.26.png" />
+    <None Include="Resources\53.20.png" />
+    <None Include="Resources\53.26.png" />
+    <None Include="Resources\54.20.png" />
+    <None Include="Resources\54.26.png" />
+    <None Include="Resources\55.20.png" />
+    <None Include="Resources\55.26.png" />
+    <None Include="Resources\56.20.png" />
+    <None Include="Resources\56.26.png" />
+    <None Include="Resources\57.20.png" />
+    <None Include="Resources\57.26.png" />
+    <None Include="Resources\58.20.png" />
+    <None Include="Resources\58.26.png" />
+    <None Include="Resources\59.20.png" />
+    <None Include="Resources\6.20.png" />
+    <None Include="Resources\6.26.png" />
+    <None Include="Resources\59.26.png" />
+    <None Include="Resources\60.20.png" />
+    <None Include="Resources\60.26.png" />
+    <None Include="Resources\61.20.png" />
+    <None Include="Resources\61.26.png" />
+    <None Include="Resources\62.20.png" />
+    <None Include="Resources\62.26.png" />
+    <None Include="Resources\63.20.png" />
+    <None Include="Resources\63.26.png" />
+    <None Include="Resources\64.20.png" />
+    <None Include="Resources\64.26.png" />
+    <None Include="Resources\65.20.png" />
+    <None Include="Resources\65.26.png" />
+    <None Include="Resources\66.20.png" />
+    <None Include="Resources\66.26.png" />
+    <None Include="Resources\67.20.png" />
+    <None Include="Resources\67.26.png" />
+    <None Include="Resources\68.20.png" />
+    <None Include="Resources\68.26.png" />
+    <None Include="Resources\69.20.png" />
+    <None Include="Resources\7.20.png" />
+    <None Include="Resources\7.26.png" />
+    <None Include="Resources\69.26.png" />
+    <None Include="Resources\70.20.png" />
+    <None Include="Resources\70.26.png" />
+    <None Include="Resources\71.20.png" />
+    <None Include="Resources\71.26.png" />
+    <None Include="Resources\72.20.png" />
+    <None Include="Resources\72.26.png" />
+    <None Include="Resources\73.20.png" />
+    <None Include="Resources\73.26.png" />
+    <None Include="Resources\74.20.png" />
+    <None Include="Resources\74.26.png" />
+    <None Include="Resources\75.20.png" />
+    <None Include="Resources\75.26.png" />
+    <None Include="Resources\76.20.png" />
+    <None Include="Resources\76.26.png" />
+    <None Include="Resources\77.20.png" />
+    <None Include="Resources\77.26.png" />
+    <None Include="Resources\78.20.png" />
+    <None Include="Resources\78.26.png" />
+    <None Include="Resources\79.20.png" />
+    <None Include="Resources\8.20.png" />
+    <None Include="Resources\8.26.png" />
+    <None Include="Resources\79.26.png" />
+    <None Include="Resources\80.20.png" />
+    <None Include="Resources\80.26.png" />
+    <None Include="Resources\81.20.png" />
+    <None Include="Resources\81.26.png" />
+    <None Include="Resources\82.20.png" />
+    <None Include="Resources\82.26.png" />
+    <None Include="Resources\83.20.png" />
+    <None Include="Resources\83.26.png" />
+    <None Include="Resources\84.20.png" />
+    <None Include="Resources\84.26.png" />
+    <None Include="Resources\85.20.png" />
+    <None Include="Resources\85.26.png" />
+    <None Include="Resources\86.20.png" />
+    <None Include="Resources\86.26.png" />
+    <None Include="Resources\87.20.png" />
+    <None Include="Resources\9.20.png" />
+    <None Include="Resources\9.26.png" />
+    <None Include="Resources\87.26.png" />
+    <None Include="Resources\add26.png" />
+    <None Include="Resources\BG1.jpg" />
+    <None Include="Resources\BG2.jpg" />
+    <None Include="Resources\BG3.jpg" />
+    <None Include="Resources\button.png" />
+    <None Include="Resources\button1.png" />
+    <None Include="Resources\button2.png" />
+    <None Include="Resources\christmas-background.jpg" />
+    <None Include="Resources\deleate26.png" />
+    <None Include="Resources\edit-cut-icon.20.png" />
+    <None Include="Resources\edit-cut-icon.26.png" />
+    <None Include="Resources\edit-icon.20.png" />
+    <None Include="Resources\edit-icon.26.png" />
+    <None Include="Resources\head1.jpg" />
+    <None Include="Resources\head2.jpg" />
+    <None Include="Resources\head3.jpg" />
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\loginbox.png" />
+    <None Include="Resources\Mainmanu.png" />
+    <None Include="Resources\mobile_syncronization.20.png" />
+    <None Include="Resources\mobile_syncronization.26.png" />
+    <None Include="Resources\photoadd.20.png" />
+    <None Include="Resources\photoadd.26.png" />
+    <None Include="Resources\recycle-bin-icon.20.png" />
+    <None Include="Resources\recycle-bin-icon.26.png" />
+    <None Include="Resources\red_resfresh.20.png" />
+    <None Include="Resources\red_resfresh.26.png" />
+    <None Include="Resources\report.20.png" />
+    <None Include="Resources\report.26.png" />
+    <None Include="Resources\search1.png" />
+    <None Include="Resources\select26.png" />
+    <None Include="Resources\table-excel.20.png" />
+    <None Include="Resources\table-excel.26.png" />
+    <None Include="Resources\table-export.20.png" />
+    <None Include="Resources\table-export.26.png" />
+    <None Include="Resources\table-import.20.png" />
+    <None Include="Resources\table-import.26.png" />
+    <None Include="Resources\table-replace.20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table-replace.26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FunctionClass\FunctionClass.vbproj">
+      <Project>{A68F53BD-88F5-4FF0-8493-90D7BF999C96}</Project>
+      <Name>FunctionClass</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg4.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
